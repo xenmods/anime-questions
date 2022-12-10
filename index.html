@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <!-- Polyfill in case the browser does not support the fetch API -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Anime Questions</title>
+</head>
+
+<body>
+  <div class="container">
+    <p id="scoretext" class="direction">Score: 0</p>
+    <p id="text">Can you answer it?</p>
+    <p id="question"></p>
+    <p id="answer"></p>
+    <!-- <button id="answerbtn">See Answer</button> -->
+    <!-- <button id="questionbtn">New Question</button> -->
+    <button id="truebtn" class="btn btn-shadow btn-shadow--green"> <span>True</span></button>
+    <button id="falsebtn" class="btn btn-shadow btn-shadow--red"> <span>False</span></button></br>
+    <button id="questionbtn" class="btn btn-shadow btn-shadow--blue"> <span>Next Question</span></button>
+  </div>
+
+  <script src="./helloworld.js"></script>
+</body>
+
+</html>

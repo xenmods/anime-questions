@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  /* background-color: #5B67DB; */
+  background-image: url("animebg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: #fff;
+  /* width: 40vw; */
+  text-align: center;
+  border-radius: 10px;
+  /* box-shadow: 5px 10px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+
+#text {
+  margin: 10px;
+  color: gray;
+  font-weight: bold;
+  font-size: large;
+  font-family: monospace;
+}
+
+
+#scoretext {
+  text-align: right;
+  margin: 10px;
+  font-weight: bold;
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+  font-size: large;
+  font-family: monospace;
+}
+
+#question {
+  margin: 20px 60px;
+  font-weight: bold;
+  max-width: 45vw;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+/* button {
+  background-color: #976ADB;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50em;
+  margin: 15px 15px 40px 15px;
+  cursor: pointer;
+  /* box-shadow: 0px 2px 8px black; */
+
+
+button:active {
+  transform: scale(.98);
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  /* text-transform: uppercase; */
+} 
+ 
+.btn:hover .btn-slide-show-text1 {
+  margin-left: 65px;
+} 
+ 
+.btn-shadow {
+  display: inline-block;
+  margin: 7px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-align: center;
+  background: none;
+  outline: none;
+  border: none;
+} 
+ 
+.btn-shadow::before {
+  content: "";
+  height: 20px;
+  position: absolute;
+  bottom: -1px;
+  left: 10px;
+  right: 10px;
+  z-index: 0;
+  border-radius: 2em;
+  
+  filter: blur(14px) brightness(0.9);
+} 
+ 
+.btn-shadow span {
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out 0s;
+  padding: 16px 60px;
+  border-radius: 50em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: relative;
+  z-index: 2;
+  will-change: transform, filter;
+} 
+ 
+.btn-shadow:hover {
+  color: rgb(255, 255, 255);
+} 
+ 
+.btn-shadow:hover span {
+  filter: brightness(0.9) contrast(1.2);
+  transform: scale(0.96);
+} 
+ 
+.btn-shadow:hover::before {
+  bottom: 8px;
+  filter: blur(6px) brightness(0.8);
+  left: 15px;
+  right: 15px;
+} 
+ 
+.btn-shadow--red span {
+  background: rgb(255, 0, 0);
+} 
+
+.btn-shadow--green span {
+  background: rgb(83, 187, 107);
+} 
+
+.btn-shadow--blue span {
+  background: rgb(0, 204, 255);
+} 
